@@ -1,2 +1,1 @@
-# FOOD_DELI_kotlin
-Kotlin mobile app to sell food
+# nothing here!!! Please check out master branch :)
