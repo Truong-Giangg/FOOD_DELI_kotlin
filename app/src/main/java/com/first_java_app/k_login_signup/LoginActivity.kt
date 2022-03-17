@@ -1,19 +1,20 @@
-package com.example.baitapkotlin_1
+package com.first_java_app.k_login_signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-//import kotlinx.android.synthetic.main.activity_login.*
-//
-//class LoginActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_login)
-//
-//        txtLogin.setOnClickListener {
-//            val intent3 : Intent = Intent(applicationContext,SignUpActivity::class.java)
-//            startActivity(intent3)
-//        }
-//
-//    }
-//}
+import android.widget.TextView
+
+class LoginActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_login)
+        val gotoSignup = findViewById(R.id.gotoSignup) as TextView
+        gotoSignup.setOnClickListener{
+            val intent = Intent(this, SignUpActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+}
