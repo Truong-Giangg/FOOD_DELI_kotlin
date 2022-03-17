@@ -60,7 +60,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
-       <TextView
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -71,8 +72,8 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true"
-            android:hint="Your password">
+            android:hint="Your password"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
@@ -83,74 +84,79 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:focusable="true"
             android:layout_gravity="center"
-            android:onClick="forgotPass"
+            android:layout_marginTop="10dp"
             android:text="Forgot your password?"
             android:textColor="@color/orange" />
+
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/orange"
-            android:layout_gravity="center"
-            android:text="Login"
-
             android:background="@drawable/rounded_button"
-            android:ems="10"/>
+            android:backgroundTint="@color/orange"
 
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:clickable="true"-->
-<!--            android:focusable="true"-->
-<!--            android:onClick="login"-->
-<!--            android:src="@drawable/ic_loginbtn" />-->
+            android:ems="10"
+            android:text="Login" />
+
+        <!--        <ImageView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:clickable="true"-->
+        <!--            android:focusable="true"-->
+        <!--            android:onClick="login"-->
+        <!--            android:src="@drawable/ic_loginbtn" />-->
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Don't have an account?" />
+
             <TextView
                 android:id="@+id/gotoSignup"
-                android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:text="Sign up"
                 android:textColor="@color/orange" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
-            android:weightSum="3"
+            android:orientation="horizontal"
 
-            android:orientation="horizontal">
+            android:weightSum="3">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:src="@drawable/ic__bottomline" />
+
             <TextView
-                android:layout_marginRight="10dp"
-                android:layout_marginLeft="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sign in with"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:gravity="center" />
+                android:gravity="center"
+                android:text="Sign in with" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -158,13 +164,15 @@
                 android:layout_weight="1"
                 android:src="@drawable/ic__bottomline" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:weightSum="2"
+            android:orientation="horizontal"
 
-            android:orientation="horizontal">
+            android:weightSum="2">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -174,6 +182,7 @@
                 android:focusable="true"
                 android:onClick="facelog"
                 android:src="@drawable/ic_facebtn" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -183,19 +192,19 @@
                 android:focusable="true"
                 android:onClick="googlelog"
                 android:src="@drawable/ic_googlebtn" />
-<!--            <androidx.appcompat.widget.AppCompatButton-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@drawable/rounded_button"-->
-<!--                android:layout_weight="1"-->
-<!--                />-->
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/rounded_button"-->
+            <!--                android:layout_weight="1"-->
+            <!--                />-->
 
-<!--            <androidx.appcompat.widget.AppCompatButton-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:background="@drawable/rounded_button"-->
-<!--                android:layout_weight="1"-->
-<!--                />-->
+            <!--            <androidx.appcompat.widget.AppCompatButton-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/rounded_button"-->
+            <!--                android:layout_weight="1"-->
+            <!--                />-->
 
         </LinearLayout>
     </LinearLayout>

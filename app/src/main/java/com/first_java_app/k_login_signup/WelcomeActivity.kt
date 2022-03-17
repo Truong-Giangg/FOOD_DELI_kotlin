@@ -13,13 +13,13 @@ class WelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
-        val skipBtn = findViewById(R.id.welcomeSkip) as Button
+        val skipBtn = findViewById<Button>(R.id.welcomeSkip)
         skipBtn.setOnClickListener{
             val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent)
             finish()
         }
-        val gotoLogin = findViewById(R.id.gotoLogin) as TextView
+        val gotoLogin = findViewById<TextView>(R.id.gotoLogin)
         gotoLogin.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
