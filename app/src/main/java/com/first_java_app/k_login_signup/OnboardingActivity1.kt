@@ -5,13 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class OnboardingActivity : AppCompatActivity() {
+class OnboardingActivity1 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_onboarding)
+        setContentView(R.layout.activity_onboarding1)
         val nextBtn = findViewById<Button>(R.id.nextBtn)
         nextBtn.setOnClickListener{
-            val intent = Intent(this, OnboardingActivity1::class.java)
+            val intent = Intent(this, OnboardingActivity2::class.java)
             startActivity(intent)
             finish()
         }
