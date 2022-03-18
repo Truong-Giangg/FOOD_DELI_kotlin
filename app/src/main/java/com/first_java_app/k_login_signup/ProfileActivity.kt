@@ -11,6 +11,12 @@ class ProfileActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
-
+        val edt=findViewById<TextView>(R.id.editProfileClickable)
+        edt.setOnClickListener(){
+            openDialog()
+        }
+    }
+    fun openDialog(){
+        Mydialog().show(supportFragmentManager,"mydialog")
     }
 }

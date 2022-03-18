@@ -74,6 +74,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Edge Endaz"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
         <TextView
@@ -93,6 +94,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="prelookstudio@gmail.com"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
         <TextView
@@ -111,6 +113,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="(+84) 3723 4221"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
