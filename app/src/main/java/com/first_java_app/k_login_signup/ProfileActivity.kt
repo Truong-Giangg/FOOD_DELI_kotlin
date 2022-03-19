@@ -14,6 +14,7 @@ class ProfileActivity : AppCompatActivity(){
         val edt=findViewById<TextView>(R.id.editProfileClickable)
         edt.setOnClickListener(){
             openDialog()
+
         }
     }
     fun openDialog(){

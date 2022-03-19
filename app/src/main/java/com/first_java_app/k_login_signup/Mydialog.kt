@@ -4,6 +4,8 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import androidx.fragment.app.DialogFragment
 
 class Mydialog : DialogFragment() {
@@ -12,6 +14,7 @@ class Mydialog : DialogFragment() {
             val builder= AlertDialog.Builder(it)
             builder.setView(requireActivity().layoutInflater.inflate(R.layout.layout_dialog,null))
             builder.setPositiveButton("Summit", DialogInterface.OnClickListener({ dialog, id->
+
 
             }))
             builder.create()
