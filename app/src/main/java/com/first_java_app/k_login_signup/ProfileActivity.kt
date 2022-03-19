@@ -19,21 +19,26 @@ class ProfileActivity : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
         val edt=findViewById<TextView>(R.id.editProfileClickable)
-
-        edt.setOnClickListener(){
-            openDialog()
-
         txtName=findViewById<TextView>(R.id.txtName)
         txtMail=findViewById<TextView>(R.id.txtMail)
         txtPhone=findViewById<TextView>(R.id.txtPhone)
+
         edt.setOnClickListener(){
             openDialog()
         }
+        txtName.setOnClickListener(){
+            openDialog()
+        }
+        txtMail.setOnClickListener(){
+            openDialog()
+        }
+        txtPhone.setOnClickListener(){
+            openDialog()
+        }
+
     }
-
     fun openDialog(){
-        //Mydialog().show(supportFragmentManager,"mydialog")
-
+//        Mydialog().show(supportFragmentManager,"mydialog")
         val mDialogView= LayoutInflater.from(this).inflate(R.layout.layout_dialog,null)
         val edtName=mDialogView.findViewById<EditText>(R.id.edtName)
         val edtMail=mDialogView.findViewById<EditText>(R.id.edtMail)
@@ -46,12 +51,5 @@ class ProfileActivity : AppCompatActivity(){
                 txtPhone.text=edtPhone.text
             }))
         mBuilder.show()
-
-
-
-        }
-    }
-    fun openDialog(){
-        Mydialog().show(supportFragmentManager,"mydialog")
     }
 }

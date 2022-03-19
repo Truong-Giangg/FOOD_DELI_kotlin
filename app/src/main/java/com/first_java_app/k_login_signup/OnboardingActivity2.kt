@@ -11,7 +11,7 @@ class OnboardingActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_onboarding2)
         val nextBtn = findViewById<Button>(R.id.nextBtn)
         nextBtn.setOnClickListener{
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, WelcomeActivity::class.java)
             startActivity(intent)
             finish()
         }

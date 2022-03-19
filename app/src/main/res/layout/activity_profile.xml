@@ -61,82 +61,44 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="Full name" />
 
         <TextView
             android:id="@+id/txtName"
-            android:layout_width="356dp"
-            android:layout_height="39dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:inputType="text"
+            android:text="Edge Endaz"
             android:textColor="@color/black"/>
 
-<<<<<<< HEAD
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Edge Endaz"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
-=======
->>>>>>> origin/hao1
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:text="E-mail" />
-<<<<<<< HEAD
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputPass"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:passwordToggleEnabled="true"
-            android:hint="Your password">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="prelookstudio@gmail.com"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
-=======
         <TextView
             android:id="@+id/txtMail"
-            android:layout_width="356dp"
-            android:layout_height="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:inputType="text"
+            android:text="prelookstudio@gmail.com"
             android:textColor="@color/black"/>
->>>>>>> origin/hao1
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="40dp"
             android:text="Phone number" />
         <TextView
             android:id="@+id/txtPhone"
-            android:text="012312312"
+            android:text="(+84) 3723 4221"
             android:layout_width="356dp"
             android:layout_height="39dp"
             android:inputType="text"
             android:textColor="@color/black"/>
 
-<<<<<<< HEAD
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/inputPhone"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Your email or phone">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="(+84) 3723 4221"
-                android:inputType="text" />
-        </com.google.android.material.textfield.TextInputLayout>
-=======
->>>>>>> origin/hao1
     </LinearLayout>
 </RelativeLayout>
