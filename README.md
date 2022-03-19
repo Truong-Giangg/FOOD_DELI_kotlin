@@ -9,3 +9,4 @@ Trần Công Huy
 
 
 Video demo week 2: https://drive.google.com/file/d/1jibxwwzLlJUIziI63A-71YTadI19MP15/view?usp=sharing
+Image folder: https://drive.google.com/drive/folders/1jwOjgcsuKaAzUktHCKBi9ayNcqIXWC6Q?usp=sharing
