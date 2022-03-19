@@ -25,6 +25,7 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/edtName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/gray_border"
@@ -33,6 +34,7 @@
             android:hint="Full Name"
             android:textColorHint="@color/black"/>
         <EditText
+            android:id="@+id/edtMail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -42,6 +44,7 @@
             android:hint="E-mail"
             android:textColorHint="@color/black"/>
         <EditText
+            android:id="@+id/edtPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
