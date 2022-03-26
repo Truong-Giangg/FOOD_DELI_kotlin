@@ -9,30 +9,34 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.first_java_app.k_login_signup.databinding.ActivityProfileBinding
 import com.google.android.material.textfield.TextInputLayout
 
 class ProfileActivity : AppCompatActivity(){
-    lateinit var txtName:TextView
-    lateinit var txtMail:TextView
-    lateinit var txtPhone:TextView
+    private lateinit var binding: ActivityProfileBinding
+//    lateinit var txtName:TextView
+//    lateinit var txtMail:TextView
+//    lateinit var txtPhone:TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile)
-        val edt=findViewById<TextView>(R.id.editProfileClickable)
-        txtName=findViewById<TextView>(R.id.txtName)
-        txtMail=findViewById<TextView>(R.id.txtMail)
-        txtPhone=findViewById<TextView>(R.id.txtPhone)
+//        setContentView(R.layout.activity_profile)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_profile)
+//        val edt=findViewById<TextView>(R.id.editProfileClickable)
+//        txtName=findViewById<TextView>(R.id.txtName)
+//        txtMail=findViewById<TextView>(R.id.txtMail)
+//        txtPhone=findViewById<TextView>(R.id.txtPhone)
 
-        edt.setOnClickListener(){
+        binding.editProfileClickable.setOnClickListener(){
             openDialog()
         }
-        txtName.setOnClickListener(){
+        binding.txtName.setOnClickListener(){
             openDialog()
         }
-        txtMail.setOnClickListener(){
+        binding.txtMail.setOnClickListener(){
             openDialog()
         }
-        txtPhone.setOnClickListener(){
+        binding.txtPhone.setOnClickListener(){
             openDialog()
         }
 
@@ -46,9 +50,9 @@ class ProfileActivity : AppCompatActivity(){
         val mBuilder=AlertDialog.Builder(this)
             .setView(mDialogView)
             .setPositiveButton("Summit", DialogInterface.OnClickListener({ dialog, id->
-                txtName.text=edtName.text
-                txtMail.text=edtMail.text
-                txtPhone.text=edtPhone.text
+                binding.txtName.text=edtName.text
+                binding.txtMail.text=edtMail.text
+                binding.txtPhone.text=edtPhone.text
             }))
         mBuilder.show()
     }

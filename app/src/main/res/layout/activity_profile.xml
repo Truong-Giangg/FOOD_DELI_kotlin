@@ -1,104 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/grayWhite">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:src="@drawable/ic_pinkcircle" />
+    <data>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/ic_leftelip" />
+    </data>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/ic_rightelip" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayWhite">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_roundprofilepicture" />
-        <TextView
-            android:id="@+id/profileName"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/ic_pinkcircle" />
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:textStyle="bold"
-            android:text="Ronaldo" />
-        <TextView
-            android:id="@+id/editProfileClickable"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_leftelip" />
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:text="Edit profile" />
-    </LinearLayout>
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_rightelip" />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginRight="30dp"
-        android:orientation="vertical">
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_roundprofilepicture" />
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:text="Ronaldo" />
+
+            <TextView
+                android:id="@+id/editProfileClickable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Edit profile" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Full name" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/txtName"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Full name" />
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="Edge Endaz"
-            android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtName"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="E-mail" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="Edge Endaz"
+                android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/txtMail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:text="prelookstudio@gmail.com"
-            android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="E-mail" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="Phone number" />
-        <TextView
-            android:id="@+id/txtPhone"
-            android:text="(+84) 3723 4221"
-            android:layout_width="356dp"
-            android:layout_height="39dp"
-            android:inputType="text"
-            android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/txtMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:text="prelookstudio@gmail.com"
+                android:textColor="@color/black" />
 
-    </LinearLayout>
-</RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Phone number" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:text="(+84) 3723 4221"
+                android:layout_width="356dp"
+                android:layout_height="39dp"
+                android:inputType="text"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -3,43 +3,32 @@ package com.first_java_app.k_login_signup
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import com.google.android.material.textfield.TextInputLayout
+import androidx.databinding.DataBindingUtil
+import com.first_java_app.k_login_signup.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
-        val userName = findViewById<TextInputLayout>(R.id.inputEmail)
-        val password = findViewById<TextInputLayout>(R.id.inputPass)
-
-        val gotoSignup = findViewById<TextView>(R.id.gotoSignup)
-        gotoSignup.setOnClickListener{
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_login)
+        binding.gotoSignup.setOnClickListener{
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
-        val loginButton = findViewById<Button>(R.id.loginBtn)
-        loginButton.setOnClickListener{
-            val userNameVal = userName.editText?.text?.trim().toString()
-            val passwordVal = password.editText?.text?.trim().toString()
-            if(userNameVal.equals("ronaldo@gmail.com")){
-                if(passwordVal.equals("123456")){
-                    val intent = Intent(this, ProfileActivity::class.java)
-                    startActivity(intent)
-                    finish()
-                }else Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT).show()
-            }else Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT).show()
+        binding.loginBtn.setOnClickListener{
+            val userNameVal = binding.inputEmail.editText?.text?.trim().toString()
+            val passwordVal = binding.inputPass.editText?.text?.trim().toString()
+//            if(userNameVal.equals("ronaldo@gmail.com")){
+//                if(passwordVal.equals("123456")){
+//                    val intent = Intent(this, ProfileActivity::class.java)
+//                    startActivity(intent)
+//                    finish()
+//                }else Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT).show()
+//            }else Toast.makeText(this, "Wrong username or password", Toast.LENGTH_SHORT).show()
 
-//            val intent = Intent(this, SignUpActivity::class.java)
-//            startActivity(intent)
         }
-
-
-
     }
 
 }
