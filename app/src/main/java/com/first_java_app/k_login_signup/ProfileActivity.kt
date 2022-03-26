@@ -35,6 +35,10 @@ class ProfileActivity : AppCompatActivity(){
         binding.txtPhone.setOnClickListener(){
             openDialog()
         }
+        val intent = intent
+        val preEmail = intent.getStringExtra("useremail")
+        binding.txtMail.setText(preEmail)
+
     }
     fun openDialog(){
         val mDialogView= LayoutInflater.from(this).inflate(R.layout.layout_dialog,null)
@@ -50,9 +54,9 @@ class ProfileActivity : AppCompatActivity(){
                     edtPhone.text.toString()
                 )
                 listenerErrorEvent()
-//                binding.txtName.text=edtName.text
-//                binding.txtMail.text=edtMail.text
-//                binding.txtPhone.text=edtPhone.text
+                binding.txtName.text=edtName.text
+                binding.txtMail.text=edtMail.text
+                binding.txtPhone.text=edtPhone.text
             }))
         mBuilder.show()
     }

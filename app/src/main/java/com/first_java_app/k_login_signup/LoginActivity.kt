@@ -24,6 +24,7 @@ class LoginActivity : AppCompatActivity() {
             val userNameVal = binding.inputEmail.editText?.text?.trim().toString()
             val passwordVal = binding.inputPass.editText?.text?.trim().toString()
             viewModel.checkEmailAndPassword(userNameVal,passwordVal)
+
 //            if(userNameVal.equals("ronaldo@gmail.com")){
 //                if(passwordVal.equals("123456")){
 //                    val intent = Intent(this, ProfileActivity::class.java)
@@ -42,6 +43,8 @@ class LoginActivity : AppCompatActivity() {
                 if(check()) {
                     Toast.makeText(this, "Đăng nhập thành công!!", Toast.LENGTH_SHORT).show()
                     val intent: Intent = Intent(this, ProfileActivity::class.java)
+                    val userEmailVal = binding.inputEmail.editText?.text?.trim().toString()
+                    intent.putExtra("useremail", userEmailVal)
                     startActivity(intent)
                 }
                 else {

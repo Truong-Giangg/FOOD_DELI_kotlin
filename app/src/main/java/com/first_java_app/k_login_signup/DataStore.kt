@@ -23,7 +23,7 @@ class DataStore (val context: Context) {
             USER_NAME_KEY = name
             USER_EMAIL_KEY = email
             USER_PASS_KEY = pass
-            USER_PHONE_KEY = "03432424233"
+            USER_PHONE_KEY = "(+84) 432 4233"
         }
     }
 }
