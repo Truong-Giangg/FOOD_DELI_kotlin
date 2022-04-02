@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">K_Login_Signup</string>
+    <string name="Required">Required</string>
 </resources>
