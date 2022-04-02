@@ -1,9 +1,10 @@
-package com.first_java_app.k_login_signup
+package com.first_java_app.k_login_signup.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.first_java_app.k_login_signup.R
 
 class OnboardingActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

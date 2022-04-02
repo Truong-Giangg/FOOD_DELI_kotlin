@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.first_java_app.k_login_signup">
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.K_Login_Signup">
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,23 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".WelcomeActivity"/>
-        <activity
-            android:name=".OnboardingActivity"/>
-        <activity
-            android:name=".OnboardingActivity1"/>
-        <activity
-            android:name=".OnboardingActivity2"/>
-        <activity
-            android:name=".LoginActivity"/>
-        <activity
-            android:name=".SignUpActivity"/>
-        <activity
-            android:name=".ProfileActivity"/>
-        <activity
-            android:name=".Profile"/>
-
+        <activity android:name=".activity.WelcomeActivity" />
+        <activity android:name=".activity.OnboardingActivity" />
+        <activity android:name=".activity.OnboardingActivity1" />
+        <activity android:name=".activity.OnboardingActivity2" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SignUpActivity" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.Profile" />
+        <activity android:name=".activity.MenuListActivity"
+            android:exported="true">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.LoginActivity" />
+        </activity>
     </application>
 
 </manifest>
