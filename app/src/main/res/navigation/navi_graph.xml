@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.first_java_app.k_login_signup.fragment.welcomeFragment"
+        android:label="welcomeFragment"
+        tools:layout="@layout/fragment_welcome"
+        >
+        <action
+            android:id="@+id/action_welcomeFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.first_java_app.k_login_signup.fragment.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_signUpFragment_to_menuFragment"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/signUpFragment"
+            
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.first_java_app.k_login_signup.fragment.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu"
+        />
+</navigation>
