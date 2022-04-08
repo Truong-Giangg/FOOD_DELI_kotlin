@@ -41,7 +41,7 @@ class LoginActivity : AppCompatActivity() {
     private fun listenerSuccessEvent() {
         viewModel.isSuccessEvent.observe(this) {
             if (it) {
-                var full_n= intent.getStringExtra("fullname")
+                var full_n= viewModel.user.fullName
                 val email = binding.inputEmail.text.toString().trim()
                 val password = binding.inputPass.text.toString().trim()
                // var fullName = viewModel.user.fullName

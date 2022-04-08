@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_start)
-
+        setContentView(R.layout.activity_main)
+/*
         // This is used to hide the status bar and make
         // the splash screen as a full screen activity.
         window.setFlags(
@@ -26,5 +26,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }, 3000) // 3000 is the delayed time in milliseconds.
+
+ */
     }
 }

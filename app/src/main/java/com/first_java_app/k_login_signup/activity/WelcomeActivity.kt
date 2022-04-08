@@ -11,6 +11,7 @@ import com.first_java_app.k_login_signup.R
 //import kotlinx.android.synthetic.main.activity_welcom.*
 
 class WelcomeActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
