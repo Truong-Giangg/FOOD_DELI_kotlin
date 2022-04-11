@@ -10,11 +10,11 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.first_java_app.k_login_signup.R
-import com.first_java_app.k_login_signup.activity.MenuListActivity
+
 import com.first_java_app.k_login_signup.model.Restaurant
 
 
-class RestaurantAdapter(val mListener: MenuListActivity) : ListAdapter<Restaurant, RestaurantAdapter.RestaurantViewHodel>(IdolDiffUtil()) {
+class RestaurantAdapter(val mListener: OnItemClickListener) : ListAdapter<Restaurant, RestaurantAdapter.RestaurantViewHodel>(IdolDiffUtil()) {
 
     interface OnItemClickListener{
         fun onItemClick(position: Int)

@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ECE4E4">
+        tools:context=".activity.LoginActivity"
+        android:background="@color/grayWhite">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -28,9 +31,7 @@
             android:layout_alignParentRight="true"
             android:src="@drawable/ic_orangecir" />
 
-
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
@@ -38,34 +39,12 @@
             android:layout_marginRight="30dp"
             android:orientation="vertical">
 
-
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="Sign up"
+                android:layout_marginTop="80dp"
+                android:text="Log in"
                 android:textSize="40dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="FullName" />
-
-            <com.google.android.material.textfield.TextInputLayout
-
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Full Name">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/inputFullName"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -74,7 +53,6 @@
                 android:text="E-mail" />
 
             <com.google.android.material.textfield.TextInputLayout
-
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -98,8 +76,8 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true"
-                android:hint="Your password">
+                android:hint="Your password"
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/inputPass"
@@ -108,18 +86,25 @@
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnSignUp"
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
-                android:backgroundTint="@color/orange"
                 android:layout_gravity="center"
-                android:text="Sign up"
+                android:layout_marginTop="10dp"
+                android:text="Forgot your password?"
+                android:textColor="@color/orange" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/rounded_button"
-                android:ems="10" />
+                android:backgroundTint="@color/orange"
+                android:ems="10"
+                android:text="Login" />
 
             <!--        <ImageView-->
             <!--            android:layout_width="wrap_content"-->
@@ -139,14 +124,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Already have an account? " />
+                    android:text="Don't have an account?" />
 
                 <TextView
-                    android:id="@+id/gotoLogin"
+                    android:id="@+id/gotoSignup"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
                     android:layout_marginLeft="10dp"
-                    android:text="Login"
+                    android:text="Sign up"
                     android:textColor="@color/orange" />
             </LinearLayout>
 
@@ -154,10 +140,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:weightSum="3"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
 
-                android:orientation="horizontal">
+                android:weightSum="3">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -167,13 +153,13 @@
                     android:src="@drawable/ic__bottomline" />
 
                 <TextView
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Sign in with"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:layout_weight="1"
-                    android:gravity="center" />
+                    android:gravity="center"
+                    android:text="Sign in with" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -187,9 +173,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:weightSum="2"
+                android:orientation="horizontal"
 
-                android:orientation="horizontal">
+                android:weightSum="2">
 
                 <ImageView
                     android:layout_width="wrap_content"
