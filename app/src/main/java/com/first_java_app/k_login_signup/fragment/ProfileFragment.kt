@@ -50,7 +50,7 @@ class ProfileFragment : Fragment() {
             txtName.setOnClickListener {
                 showDialog(txtName)
             }
-//            setLogOut()
+            setLogOut()
         }
     }
 
@@ -85,16 +85,16 @@ class ProfileFragment : Fragment() {
             show()
         }
     }
-//    private fun setLogOut(){
-//        binding.btnLogOut.setOnClickListener {
-//            val editor : SharedPreferences.Editor = sharePreferences.edit()
-//            editor.putString("NAME",viewModel.user.fullName)
-//            editor.putString("EMAIL",viewModel.user.email)
-//            editor.putString("PASSWORD",viewModel.user.password.trim())
-//            editor.putBoolean("CHECK",false)
-//            editor.apply()
-//            val controller = findNavController()
-//            controller.navigate(R.id.action_profileFragment_to_welcomeFragment)
-//        }
-//    }
+    private fun setLogOut(){
+        binding.logoutBtn.setOnClickListener {
+            val editor : SharedPreferences.Editor = sharePreferences.edit()
+            editor.putString("NAME",viewModel.user.fullName)
+            editor.putString("EMAIL",viewModel.user.email)
+            editor.putString("PASSWORD",viewModel.user.password.trim())
+            editor.putBoolean("CHECK",false)
+            editor.apply()
+            val controller = findNavController()
+            controller.navigate(R.id.action_profileFragment_to_welcomeFragment)
+        }
+    }
 }

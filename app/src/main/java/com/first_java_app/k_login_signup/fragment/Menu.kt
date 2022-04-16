@@ -36,29 +36,11 @@ class Menu : Fragment(), RestaurantAdapter.OnItemClickListener {
         return binding.root
     }
 
-//    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater){
-//        inflater.inflate(R.menu.options_menu,menu)
-//        super.onCreateOptionsMenu(menu, inflater)
-//    }
 
     override fun onStart() {
         super.onStart()
         viewModel.loadData()
     }
-//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-//        when(item.itemId){
-//            R.id.action_listview -> {
-//                val lm = LinearLayoutManager(context)
-//                binding.rvRestaurant.layoutManager = lm
-//            }
-//            R.id.action_gridview -> {
-//                val gm = GridLayoutManager(context,2)
-//                binding.rvRestaurant.layoutManager = gm
-//            }
-//        }
-//
-//        return super.onOptionsItemSelected(item)
-//    }
     private fun registerData(){
         viewModel.listOfData.observe(viewLifecycleOwner){
             adapter.submitList(it)
@@ -83,31 +65,31 @@ class Menu : Fragment(), RestaurantAdapter.OnItemClickListener {
     }
 
     override fun onItemClick(position: Int) {
-//        val builder = AlertDialog.Builder(requireContext())
-//        val dialogLayout =layoutInflater.inflate(R.layout.item_view_restaurant_clicked,null)
-//        val tvName = dialogLayout.findViewById<TextView>(R.id.txtRestaurantName)
-//        val tvAddress = dialogLayout.findViewById<TextView>(R.id.txtRestaurantAddr)
-//        val ivImage = dialogLayout.findViewById<ImageView>(R.id.imgRestaurant)
-//        tvName.text = RestaurantStore.getDataset()[position].name
-//        tvAddress.text = RestaurantStore.getDataset()[position].address
-//        Glide.with(dialogLayout).load(RestaurantStore.getDataset()[position].image).into(ivImage)
-//        with(builder){
-//            setTitle("Remove item")
-//            setMessage("Do you want to remove this item?")
-//            setPositiveButton("Delete"){dialog, which ->
-//                val restaurant : ArrayList<Restaurant>  = RestaurantStore.getDataset()
-//                restaurant.removeAt(position)
-//                adapter.submitList(restaurant)
-//                adapter.notifyItemRemoved(position)
-//                Toast.makeText(requireContext(),"Xoa item thanh cong", Toast.LENGTH_SHORT).show()
-//                dialog.dismiss()
-//            }
-//            setNegativeButton("Cancel"){dialog, which ->
-//                dialog.dismiss()
-//            }
-//            setView(dialogLayout)
-//            show()
-//        }
+        val builder = AlertDialog.Builder(requireContext())
+        val dialogLayout =layoutInflater.inflate(R.layout.item_clicked,null)
+        val tvName = dialogLayout.findViewById<TextView>(R.id.txtRestaurantName)
+        val tvAddress = dialogLayout.findViewById<TextView>(R.id.txtRestaurantAddr)
+        val ivImage = dialogLayout.findViewById<ImageView>(R.id.imgRestaurant)
+        tvName.text = RestaurantStore.getDataset()[position].name
+        tvAddress.text = RestaurantStore.getDataset()[position].address
+        Glide.with(dialogLayout).load(RestaurantStore.getDataset()[position].image).into(ivImage)
+        with(builder){
+            setTitle("Delete item")
+            setMessage("Do you want to delete this item?")
+            setPositiveButton("Delete"){dialog, which ->
+                val restaurant : ArrayList<Restaurant>  = RestaurantStore.getDataset()
+                restaurant.removeAt(position)
+                adapter.submitList(restaurant)
+                adapter.notifyItemRemoved(position)
+                Toast.makeText(requireContext(),"item deleted", Toast.LENGTH_SHORT).show()
+                dialog.dismiss()
+            }
+            setNegativeButton("Cancel"){dialog, which ->
+                dialog.dismiss()
+            }
+            setView(dialogLayout)
+            show()
+        }
     }
 
 }

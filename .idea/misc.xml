@@ -21,7 +21,7 @@
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/activity_verificationcode.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/activity_welcome.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_menu.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_menu.xml" value="0.2" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_onboarding.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_onboarding1.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_onboarding2.xml" value="0.14130434782608695" />
@@ -30,6 +30,7 @@
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_view_pager.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_welcome.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/item_clicked.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/item_menu_list_restaurant_adapter.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/layout_dialog.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/profile.xml" value="0.22826086956521738" />
