@@ -80,7 +80,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-
+                android:text="Giang"
                 android:textColor="@color/black" />
 
             <TextView
@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-
+                android:text="giang123@gmail.com"
                 android:textColor="@color/black" />
 
 
@@ -109,8 +109,9 @@
                 android:layout_width="356dp"
                 android:layout_height="39dp"
                 android:inputType="text"
-
+                android:text="Aa123456@"
                 android:textColor="@color/black" />
+
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/logoutBtn"
                 android:layout_width="wrap_content"

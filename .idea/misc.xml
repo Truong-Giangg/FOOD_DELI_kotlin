@@ -13,6 +13,9 @@
         <entry key="..\:/LapTrinhAndroid/FOOD_DELI_kotlin-master/app/src/main/res/layout/layout_dialog.xml" value="0.2210144927536232" />
         <entry key="..\:/LapTrinhAndroid/FOOD_DELI_kotlin-master/app/src/main/res/layout/profile.xml" value="0.2210144927536232" />
         <entry key="..\:/LapTrinhAndroid/FOOD_DELI_kotlin-master/app/src/main/res/menu/options_menu.xml" value="0.18888888888888888" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/drawable/ic_star.xml" value="0.164" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/drawable/ic_video.xml" value="0.164" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/drawable/otp_unselected.xml" value="0.1815" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/activity_login.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/activity_menu_list.xml" value="0.22826086956521738" />
@@ -31,10 +34,13 @@
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_view_pager.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/fragment_welcome.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/item_clicked.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/item_clicked_movie.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/item_menu_list_restaurant_adapter.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/item_view_movie.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/layout_dialog.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/profile.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/layout/profile_dialog.xml" value="0.1546875" />
+        <entry key="..\:/Users/phamv/AndroidStudioProjects/FOOD_DELI_kotlin-master/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/K_Login_Signup/app/src/main/res/drawable-v24/drawable_round_orange_button.xml" value="0.1965" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/K_Login_Signup/app/src/main/res/drawable/drawable_button.xml" value="0.1965" />
         <entry key="..\:/Users/phamv/AndroidStudioProjects/K_Login_Signup/app/src/main/res/drawable/ic_ellipse_127.xml" value="0.3828125" />

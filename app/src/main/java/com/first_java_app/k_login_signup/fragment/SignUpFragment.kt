@@ -41,7 +41,6 @@ class SignUpFragment : Fragment() {
                 controller.navigate(R.id.action_signUpFragment_to_signInFragment)
             }
             btnSignUp.setOnClickListener {
-                // code nhận thông tin đăng kí ở đây
                 viewModel.checkEmailAndPassword(
                     inputEmail.text.toString().trim(),
                     inputPass.text.toString().trim()
