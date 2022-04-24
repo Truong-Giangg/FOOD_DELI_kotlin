@@ -18,3 +18,4 @@ Kotlin mobile app to sell food - Nhóm 2
 - video demo week 4: https://drive.google.com/file/d/19aY8CBjt1iLmgv5wRUB_H5p69858HMpW/view?usp=sharing
 
 - video demo week 5: https://drive.google.com/file/d/1lF2iTH5w-VAan-Ct6JSdhjbYCqWIouIL/view?usp=sharing
+- video demo week 6: https://drive.google.com/file/d/1uPs4V96mYtxllBz2JNgYfsKZRxUOXr5u/view?usp=sharing
